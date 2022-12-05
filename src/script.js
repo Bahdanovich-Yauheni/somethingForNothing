@@ -1,0 +1,15 @@
+const arr = ["I'm bored!!" , "I'm bored!!" , "I'm bored!!" , "I'm bored!!" , "I 'm bored!!", "I ' m bored!!", "I ' m  bored!!", "I ' m  b ored!!", "I ' m  b o red!!", "I ' m  b o r ed!!", "I ' m  b o r e d!!", "I ' m  b o r e d !!", "I ' m  b o r e d ! !", " I ' m  b o r e d !!", "  I ' m  b o r e d!!", "   I ' m  b o r ed!!", "    I ' m  b o red!!", "     I ' m  b ored!!", "      I ' m  bored!!", "       I ' m bored!!", "        I 'm bored!!", "         I'm bored!!", "        I 'm bored!!", "       I  'm bored!!", "      I   'm bored!!", "     I    'm bored!!", , "    I     'm bored!!", "   I      'm bored!!", "  I       'm bored!!", " I        'm bored!!", "I         'm bored!!", "I        ' m bored!!", "I       '  m bored!!", "I      '   m bored!!", "I     '    m bored!!", "I    '     m bored!!", "I   '      m bored!!", "I  '       m bored!!", "I '        m bored!!", "I'         m bored!!", "I'        m  bored!!", "I'       m   bored!!", "I'      m    bored!!","I'     m     bored!!", "I'    m      bored!!", , "I'   m       bored!!", "I'  m        bored!!", "I' m         bored!!", "I'm          bored!!", "I'm         b ored!!", "I'm        b  ored!!", "I'm       b   ored!!", "I'm      b    ored!!", "I'm     b     ored!!", "I'm    b      ored!!", "I'm   b       ored!!", "I'm  b        ored!!", "I'm b         ored!!","I'm b        o red!!", "I'm b       o  red!!", "I'm b      o   red!!", "I'm b     o    red!!", "I'm b    o     red!!","I'm b   o      red!!", "I'm b  o       red!!", "I'm b o        red!!", "I'm bo         red!!", "I'm bo        r ed!!", "I'm bo       r  ed!!", "I'm bo      r   ed!!", "I'm bo     r    ed!!", "I'm bo    r     ed!!", "I'm bo   r      ed!!","I'm bo  r       ed!!", "I'm bo r        ed!!", "I'm bor         ed!!", "I'm bor        e d!!", "I'm bor       e  d!!", "I'm bor      e   d!!", "I'm bor     e    d!!", "I'm bor    e     d!!", "I'm bor   e      d!!", "I'm bor  e       d!!", "I'm bor e        d!!", "I'm bore         d!!", "I'm bore        d !!", "I'm bore       d  !!", "I'm bore      d   !!", "I'm bore     d    !!", "I'm bore    d     !!", "I'm bore   d      !!", "I'm bore  d       !!", "I'm bore d        !!", "I'm bored         !!", "I'm bored        ! !", "I'm bored       !  !", "I'm bored      !   !", "I'm bored     !    !", "I'm bored    !     !", "I'm bored   !      !", "I'm bored  !       !", "I'm bored !        !", "I'm bored!        !", "I'm bored!       !", "I'm bored!      !", "I'm bored!     !", "I'm bored!    !", "I'm bored!   !", "I'm bored!  !", "I'm bored! !", "I'm bored!!", "I'm bored!!"];
+
+let res = '';
+arr. forEach(el => {
+    for(let i = 0; i <= 30; i++) {
+        res += '<pre><p>'+el+'</p></pre>'
+    }
+})
+document.querySelector('.playground').innerHTML = res;
+function pageScroll() {
+    window.scrollBy(0,22000);
+    scrolldelay = setTimeout(pageScroll,100);
+}
+
+pageScroll()
